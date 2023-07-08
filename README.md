@@ -21,5 +21,5 @@ This is an online book library application built with PHP. It allows users to br
 
 ## Contributors
 
-- (@abundiko)[https://github.com/abundiko]
+- [@abundiko](https://github.com/abundiko)
 
