@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="dist/css/explore.css">
+    <link rel="stylesheet" href="dist/css/index.css">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <div class="container-fluid justify-content-sm-between align-items-md-end ">
+        
+        <a href="#" class="navbar-brand ms-3 ">
+            <b id="brand_name" class="nav-text">akwukwo</b>
+            <!-- <div id="logo">
+                <i id="brand_logo">guo</i>
+            </div> -->
+        </a>
+ 
+          <!-- toggler/collapsible -->
+          <button class="navbar-toggler button" type="button" data-toggle="collapse" data-target="#collapsibleNavBar">
+              <span class="fas fa-bars navbar-toggler-icon"></span>
+              <!-- <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggle-icon"></span> -->
+          </button>
+ 
+ 
+                <!-- NavBar links -->
+          <div class="collapse navbar-collapse justify-content-center ms-3" id="collapsibleNavBar">
+              <ul class="navbar-nav ">
+                <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+                <li class="nav-item "><a class="nav-link" href="explore.html">explore</a></li>
+                <li class="nav-item "><a class="nav-link" href="faq.html#why">why akwukwo?</a></li>
+                <li class="nav-item "><a class="nav-link" href="contact.html">contact</a></li>
+              </ul>
+
+              <ul class="navbar-nav  align-items-sm-center shift  gap-3">
+                <li class="nav-id dropdown">
+                    <img src="img/user.png" class="img-fluid png  p-2" id="image" data-toggle="dropdown" data-target="#links">
+                    <div class="dropdown-menu" class="drpdwn">
+                      <ul class="drpdwn">
+                              <header>Hi there!</header>
+                              <div class="dropdown-divider"></div>
+                              <li class=""><a href="myaccount.html" class="dropdown-item">My Account</a></li>
+                              <li class=""><a href="library.html" class="dropdown-item">My Library</a></li>
+                              <li class=""><a href="upload.html" class="dropdown-item">Publish</a></li>
+                              <li class=""><a href="faq.html#ask" class="dropdown-item">FAQs</a></li>
+                              <div class="dropdown-divider"></div>
+                              <li class=""><a href="" class="dropdown-item">Sign Out</a></li>
+                      </ul>
+                    </div>
+
+                </li>
+               <li>
+                    <button class=" showbtn btn-lg p-2" type="button" data-toggle="modal" data-target="#login" id="show-modal"  title="log in">Sign Up</button>
+                </li>
+            </ul>
+   </div>  
+</nav>
+
+<!-- modal form  -->
+
+<div class="modal fade" id="login">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          
+
+          <div class="modal-body">
+             <div class="row rowm">
+                 <div class="col-md-6 col-6 col6">
+                  <div>
+                      <h3>Welcome to</h3>
+                       <h2 id="mo_name">akwukwo</h2>
+                  </div>
+                 </div>
+                 
+                 <div class="col-md-6 col-6 col62">
+                      <div class="modal-header">
+                          
+                          <button class="close" data-dismiss="modal">&times;</button>
+                      </div>
+
+                       
+                       <div class="row loginbox">
+                           <form role="form" method="POST" action="" class="is-valid form">
+                              
+
+                              <div class="form-group">
+                                  <label for="Email Address">Email Address</label>
+                                  <input type="email" class="form-control input-lg" name="email" placeholder="address">
+                                  <!-- <div class="invalid-feedback">Please fill out this field</div> -->
+                              </div>
+
+                              <div class="form-group">
+                                  <label for="password">Password</label>
+                                  <input type="password" class="form-control input-lg" name="email" placeholder="password"  >
+                                  <div class="invalid-feedback">Please fill out this field</div>
+                              </div>
+
+                              <div class="checkbox">
+                                  <label for="opt-in">
+                                      <input type="checkbox" id='opt-in' name="remember"> <span class="custom" style="font-size: 13px;">Remember Me?</span>
+                                  </label>
+                              </div>
+                          
+                              
+                              <div class="form-group">
+                                  <button class="btn btn-light" type="submit">LOG IN</button>
+                                  <a href="" class="btn btn-link" type="submit">Forget Password?</a>
+                              </div>
+                              <div class="form-group">
+                                  <span class="btn btn-link neww">New Here?</span>
+                              </div>
+                          </form>                                    
+                       </div>
+
+                       
+                       <div class="row registerbox">
+                          <form role="form" method="POST" action="" class="is-valid form" id="register">
+                          <div class="form-group">
+                              <label for="fullname">Full Name</label>
+                              <input type="text" class="form-control input-lg" name="names"  placeholder="name">
+                              <div class="invalid-feedback">Please fill out this field</div>
+                          </div>  
+                              
+                          <div class="form-group">
+                              <label for="email">Email Address</label>
+                              <input type="email" class="form-control input-lg" name="email"  placeholder="address">
+                              <div class="invalid-feedback">Please fill out this field</div>
+                          </div> 
+                          
+                          <div class="form-group">
+                              <label for="password">Password</label>
+                              <input type="password" class="form-control input-lg" name="password" placeholder="password" >
+                              <div class="invalid-feedback">Please fill out this field</div>
+                          </div>
+                          <div class="form-group">
+                              <label for="password">File(optional)</label>
+                              <input type="file" accept="image/*" class="form-control input-lg" name="imagefile">
+                              
+                          </div>
+                          
+                          <div class="form-group">
+                              <button class="btn btn-light" type="submit">SIGN UP</button>
+                          </div>
+
+                          <div class="form-group  member">
+                              <span class="btn btn-link" >Already a member?</span>
+                          </div>
+                              
+                      </form>    
+                       </div>                       
+                           
+
+                      <div class="modal-footer">
+                          <button class="btn btn-light" data-dismiss="modal">close</button>
+                          
+                      </div>
+                </div>
+
+             </div>
+          </div> 
+
+          
+      </div>
+  </div>
+</div> 
+
+
+    <div class="container-fluid">
+        <div class="row">
+          <section class="sect">
+            <header id="head">Explore your favorite genres</header>
+                <form class="form">   
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="authors, genres etc...">
+                        <div class="input-group-append">
+                          <button class="btn btn1" type="submit"><span class="fas fa-search"></span></button>
+                        </div>
+                      </div>
+                </form>
+                <figure class="text-start">
+                  <blockquote class="blockquote"><q class="p pt-3">Books and all forms of writing are terror to those who wish to supress the truth</q></blockquote>
+                  <figcaption class="blockquote-footer">Wole Soyinka</figcaption>
+                </figure>
+                 <hr>
+          </section>
+            <div class="col-md-8 col-8 col_first">
+                 
+                   <div class="row first_row">
+                       <div class="col-12 col-md-12">
+                        <div class="romance">
+                            <header class="rom">Romance</header>
+                            <div class="romcon">
+                                <a href="page.html" class=""><img src="img/tokyo.jpg" alt="book" class="img-fluid tokyo"></a>
+                              
+                                  <div class="desc">
+                                      <p class="desc_title">Tokyo Ever After</p>
+                                      <p class="desc_author">Emiko Jean</p>
+                                    <div class="star">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>  
+                                  </div>
+                                  <br>
+                            </div>
+    
+                            <div class="romcon">
+                                <a href="ppage" class=""><img src="img/childrenvirtue.jpg" alt="book" class="img-fluid virtue"></a>
+                                  <div class="desc">
+                                      <p class="desc_title">Children of Virtue and Vengeance</p>
+                                      <p class="desc_author">Tomi Adeyemi</p>
+                                    <div class="star">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+    
+                                    </div>  
+                                  </div>
+                            </div>
+    
+                            <div class="romcon">
+                                <a href="page.html" class=""><img src="img/excuseme.jpg" alt="book" class="img-fluid me"></a>
+                                  <div class="desc">
+                                      <p class="desc_title">Excuse Me While I Cry Ugly</p>
+                                      <p class="desc_author">Joya Goffney</p>
+                                    <div class="star">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+    
+                                    </div>  
+                                  </div>
+                            </div>
+    
+                            <div class="romcon">
+                                <a href="page.html" class=""><img src="img/firekeepers.jpg" alt="book" class="img-fluid fire"></a>
+                                  <div class="desc">
+                                      <p class="desc_title">Firekeeper's Daughter</p>
+                                      <p class="desc_author">Angelina Boulley</p>
+                                    <div class="star">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+    
+                                    </div>  
+                                  </div>
+                            </div>
+                        </div>
+                        <a href="genre.html" class="but1"><button class="btn btn-link mt-2">see more in this genre<i class="fas fa-arrow-right"></i></button></a>
+                       </div>
+                    
+                   </div>
+                   <hr>
+
+                   <div class="row second_row">
+                      <div class="col-12">
+                        <div class="fantasy">
+                          <header class="fan">Fantasy</header>
+                            <div class="fancon">
+                                <a href="page.html" target="_blank"><img src="img/cursedchild.jpg" alt="harrypotter" class="img-fluid child"></a>
+                                <div class="desc">
+                                    <p class="desc_title">Happry Potter and the Cursed Child</p>
+                                    <p class="desc_author">J.K Rowling</p>
+                                  <div class="star">
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                  </div>  
+                                </div>
+                            </div>
+                               
+                            <div class="fancon">
+                                <a href="page.html" target="_blank"><img src="img/cruelprince.jpg" alt="cruelprince" class="img-fluid cruel"></a>
+                                <div class="desc">
+                                    <p class="desc_title">Cruel Prince</p>
+                                    <p class="desc_author">Holly Black</p>
+                                  <div class="star">
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                  </div>  
+                                  <br>
+                                </div>
+                            </div>
+
+                            <div class="fancon">
+                                <a href="page.html" target="_blank"><img src="img/courtfrost.jpg" alt="courtfrost" class="img-fluid frost"></a>
+                                <div class="desc">
+                                    <p class="desc_title">Court Frost</p>
+                                    <p class="desc_author">Sarah J. Maas</p>
+                                  <div class="star">
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                  </div> 
+                                  <br> 
+                                </div>
+                            </div>
+
+                            <div class="fancon">
+                                <a href="page.html" target="_blank"><img src="img/childrenblood.jpg" alt="courtfrost" class="img-fluid fros"></a>
+                                <div class="desc">
+                                    <p class="desc_title">Children of Blood and Bone</p>
+                                    <p class="desc_author">Tomi Ayedemi</p>
+                                  <div class="star">
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                  </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <a href="genre.html" class="but2"><button class="btn btn-link mt-2">see more in this genre<i class="fas fa-arrow-right"></i></button></a>
+                      </div>  
+                   </div>
+                 <hr>    
+                 
+                 
+                 <div class="row third_row">
+                     <div class="col-12">
+                         <div class="mystery">
+                             <header class="myst">Mystery</header>
+                            
+                             <div class="mystcon">
+                                 <a href="page.html" target="_blank"><img src="img/oneofus.jpg" alt="oneofus" class="img-fluid one"></a>
+                                 <div class="desc">
+                                    <p class="desc_title">One of Us</p>
+                                    <p class="desc_author">Karen M. Mcmanus</p>
+                                  <div class="star">
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                      <span class="fas fa-star"></span>
+                                  </div>  
+                                  <br>
+                                </div>
+                             </div>
+
+                             <div class="mystcon">
+                                <a href="page.html" target="_blank"><img src="img/trouble.jpg" alt="trouble" class="img-fluid trouble"></a>
+                                <div class="desc">
+                                   <p class="desc_title">Meet Cute Diary</p>
+                                   <p class="desc_author">Emery Lee</p>
+                                 <div class="star">
+                                     <span class="fas fa-star"></span>
+                                     <span class="fas fa-star"></span>
+                                     <span class="fas fa-star"></span>
+                                     <span class="fas fa-star"></span>
+                                     <span class="fas fa-star"></span>
+                                 </div> 
+                                 <br> 
+                               </div>
+                            </div>
+
+                            <div class="mystcon">
+                                <a href="page.html" target="_blank"><img src="img/childrenblood.jpg" alt="tokyo" class="img-fluid trouble"></a>
+                                <div class="desc">
+                                   <p class="desc_title">Children of Blood and Bone</p>
+                                   <p class="desc_author">Tomi Adeyemi</p>
+                                 <div class="star">
+                                     <span class="fas fa-star"></span>
+                                     <span class="fas fa-star"></span>
+                                     <span class="fas fa-star"></span>
+                                     <span class="fas fa-star"></span>
+                                     <span class="fas fa-star"></span>
+                                 </div>  
+                               </div>
+                            </div>
+
+                            <div class="mystcon">
+                              <a href="page.html" target="_blank"><img src="img/shadowbone.jpg" alt="shadowbone" class="img-fluid bone"></a>
+                              <div class="desc">
+                                 <p class="desc_title">Shadow and Bone</p>
+                                 <p class="desc_author">Erica Bardugo</p>
+                               <div class="star">
+                                   <span class="fas fa-star"></span>
+                                   <span class="fas fa-star"></span>
+                                   <span class="fas fa-star"></span>
+                                   <span class="fas fa-star"></span>
+                                   <span class="fas fa-star"></span>
+                               </div>  
+                               <br>
+                             </div>
+                          </div>
+
+                         </div>
+                        <a href="genre.html" class="but3"><button class="btn btn-link mt-3">see more in this genre<i class="fas fa-arrow-right"></i></button></a>  
+                     </div>
+                 </div>
+                <hr>
+                
+            </div>
+            
+            <div class="col-md-4 col-4 col_second">
+              <p class="featured">Featured Books</p>
+              <br>
+              <p id="feat">Enjoy our featured books for this month, from our best and newest picks!</p>
+                 <div class="box">
+                   <div class="box_row mt-3">
+                    <a href="page.html"><img src="img/tokyo.jpg" alt="tokyo" class="featfirst"></a> 
+                    <a href="page.html"><img src="img/childrenvirtue.jpg" alt="virtue" class="featsec"></a>  
+                    <a href="page.html"><img src="img/firekeepers.jpg" alt="firekeepers" class="featthird"></a>   
+                   </div>
+
+                   <div class="box_row2">
+                     <a href="page.html"><img src="img/cruelprince.jpg" alt="" class="feat_fourth"></a>
+                     <a href="page.html"><img src="img/trouble.jpg" alt="" class="feat_fifth"></a>
+                   </div>
+                 </div>
+
+                 <div class="box_row3">
+                    <p class="see">Genres</p>
+                    <div class="row">
+                      <div class="col-md-6 col-6">
+                        <div class="list-group-flush list">
+                          <a href="genre.html" class="list-group-item Fantasy">fantasy <span class="fas fa-quidditch"></span></a>
+                          <a href="genre.html" class="list-group-item crime">crime <span class="fas fa-skull"></span></a>
+                          <a href="genre.html" class="list-group-item Mystery">mystery <span class="fas fa-binoculars"></span></a>
+                          <a href="genre.html" class="list-group-item Romance">romance <span class="fas fa-heart"></span></a>
+                          <a href="genre.html" class="list-group-item science">sci-fi <span class="fas fa-atom"></span></a>
+                          <a href="genre.html" class="list-group-item inspiration">inspiration <span class="fas fa-hands"></span></a>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-6">
+                        <div class="list-group-flush list">
+                          <a href="genre.html" class="list-group-item history">historical-fiction <span class="fas fa-dungeon"></span></a>
+                          <a href="genre.html" class="list-group-item horror">horror <span class="fas fa-ghost"></span></a>
+                          <a href="genre.html" class="list-group-item poetry">poetry <span class="fab fa-earlybirds"></span></a>
+                          <a href="genre.html" class="list-group-item comedy">comedy <span class="fas fa-laugh"></span></a>
+                          <a href="genre.html" class="list-group-item erotica">erotica <span class="fas fa-wine-glass"></span></a>
+                          <a href="genre.html" class="list-group-item doc">documentary <span class="fas fa-book-open"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                 </div>
+              </div>
+          </div>
+        </div>
+      
+        <button id="mybtn" title="go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill arrow" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg></button>
+
+        <footer class="container-fluid footer p-4 text-center">
+          <section class="container d-flex flew-col">
+              <div class="">
+                  <ul class="links">
+                      <li><a href="faq.html#ask">FAQs</a></li>
+                      <li class="contact"><a href="contact.html">Contact us</a></li>
+                      <li><a href="upload.html">Publish with us</a></li>
+                      <li><a href="terms.html">Terms & Conditions</a></li>
+                  </ul>
+              </div>
+              <div class="icons flex flex-center mt-4">
+                  <a href=""><span class="fab fa-facebook mr-5"></span></a>
+                  <a href=""><span class="fab fa-instagram mr-5"></span></a>
+                  <a href=""><span class="fab fa-twitter mr-5"></span></a>
+              </div>
+          </section>
+         <hr class="hr">
+          <span class="p-2">All Rights Reserved &copy;akwukwo</span>
+         
+       </footer>
+   
+
+    
+</body>
+<script type="text/javascript" src="dist/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="dist/js/all.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap.js"></script>
+<script src="./dist/js/index.js"></script>
+<script>
+  $(document).ready(function(){
+      $(".registerbox").hide();
+      $(".neww").click(function(){
+          $(".loginbox").hide();
+          $(".registerbox").fadeIn(500);
+      });
+      $(".member").click(function(){
+          $(".registerbox").hide();
+          $(".loginbox").fadeIn(500);
+      });
+  });
+</script>
+</html>

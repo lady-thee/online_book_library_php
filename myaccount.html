@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="dist/css/account.css">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container-fluid">
+            
+            <a href="#" class="navbar-brand mt-2">
+                <b id="brand_name">BoomBooks</b>
+                <div id="logo">
+                    <i id="brand_logo">BB</i>
+                </div>
+            </a>
+     
+              <!-- toggler/collapsible -->
+              <button class="navbar-toggler button" data-toggle="collapse" data-target="#collapsibleNavBar">
+                  <span class="fas fa-bars"></span>
+                  <!-- <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggle-icon"></span> -->
+              </button>
+     
+     
+                    <!-- NavBar links -->
+              <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavBar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item pr-4"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item pr-4"><a class="nav-link" href="explore.html">EXPLORE</a></li>
+                <li class="nav-item pr-4"><a class="nav-link" href="faq.html#why">WHY BOOKS?</a></li>
+                <li class="nav-item pr-3"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+                 <li class="nav-id dropdown"><img src="img/user.png" class="img-fluid png" id="image" data-toggle="dropdown" data-target="#links">
+                          <ul class="dropdown-menu">
+                                <header>Hi there!</header>
+                                <div class="dropdown-divider"></div>
+                               <li class=""><a href="myaccount.html" class="dropdown-item">My Account</a></li>
+                               <li class=""><a href="library.html" class="dropdown-item">My Library</a></li>
+                               <li class=""><a href="upload.html" class="dropdown-item">Publish</a></li>
+                               <li class=""><a href="faq.html#ask" class="dropdown-item">FAQs</a></li>
+                               <div class="dropdown-divider"></div>
+                               <li class=""><a href="" class="dropdown-item">Sign Out</a></li>
+
+  
+     
+                              </ul>
+                              
+                     </li>
+                     <button class="btn  btn-lg but pl-3" data-toggle="modal" data-target="#login" id="show-modal"  title="log in">SIGN UP</button>
+                    </ul>
+                     
+                  
+       </div>  
+  </nav>
+
+
+
+
+    <div class="container-fluid cont">
+        <div class="row mt-5">
+            <div class="col-md-5 col-5 col5">
+                <div class="design">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+                      </svg>
+                       <div class="id">
+                        <b id="mo_name">BoomBooks</b>
+                        <div id="mogo">
+                            <i id="mo_logo">BB</i>
+                        </div>
+                       </div>
+                        <br>
+                    <p id="acct">My Account</p>
+                </div> 
+            </div>
+            <div class="col-md-7 col7 col-7">
+                 <form action="" role="form" method="POST" class="is-valid form">
+                    <input type="hidden" name="_token" value="">
+                    <div class="form-group">
+                        <label for="Email Address" >Email Address</label>
+                        <input type="email" class="form-control " name="email" placeholder="address" >
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" name="name" placeholder="full name" >
+                    </div>
+                    
+                    <div class="form-group select">
+                        <label for="gender">Sex</label>
+                        <select name="sex" class=" custom-select custom-select-md">
+                             <option value="selected">--</option>
+                             <option value="1">male</option>
+                             <option value="2">female</option>
+                             <option value="3">transgender</option>
+                             <option value="4">pangender</option>
+                             <option value="5">non-binary</option>
+                             <option value="6">gender neutral</option>
+                             <option value="7">gender-queer</option>
+                             <option value="8">third gender</option>
+                             <option value="9">other</option>
+
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control " name="email" placeholder="phone" >
+                    </div>
+
+                    <div class="form-group  date" data-provide="datepicker">
+                        <label for="DOB">Date of Birth</label>
+                        <input type="date" class="form-control" name="email" placeholder="address" >
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </div>
+                    </div>
+                      
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group select">
+                                <label for="employment">Employment status</label>
+                                <select name="employment" class=" custom-select custom-select-md">
+                                     <option value="selected">--</option>
+                                     <option value="1">Student</option>
+                                     <option value="2">Employed</option>
+                                     <option value="3">Unemployed</option>
+                                     <option value="4">Freelancer</option>
+                                </select>
+                            </div>
+                        </div>
+                         
+                        <div class="col-sm-6">
+                            <div class="form-group select">
+                                <label for="marital">Marital Status</label>
+                                <select name="marital" class=" custom-select custom-select-md">
+                                     <option value="selected">--</option>
+                                     <option value="1">single</option>
+                                     <option value="2">married</option>
+                                     <option value="3">divorced</option>
+                                     <option value="4">it's complicated</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn" type="submit">Submit</button>
+                    </div>
+                    
+                 </form>
+            </div>
+        </div>
+    </div>
+    <button id="mybtn" title="go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill arrow" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+      </svg></button>
+
+        <br><br><br>
+
+        <footer class="page-footer footer font-small ">
+            <div class="container conta">
+                  <div class="row">
+                      <div class="col-md-12">
+                        <div class="links flex flex-center d-flex">
+                            <li><a href="faq.html#ask">FAQs</a></li>
+                            <li class="contact"><a href="contact.html">Contact us</a></li>
+                            <li><a href="upload.html">Publish with us</a></li>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                        </div>
+                         
+                      </div>
+                  </div>
+    
+                  <div class="row">
+                      <div class="col-md-12">
+                        <div class="icons flex flex-center mt-4">
+                            <a href=""><span class="fab fa-facebook mr-5"></span></a>
+                            <a href=""><span class="fab fa-instagram mr-5"></span></a>
+                            <a href=""><span class="fab fa-twitter mr-5"></span></a>
+                        </div>
+                      </div>
+                  </div>
+                       
+                       
+            </div>
+    <hr>
+            <section class="all flex flex-center">
+                
+                <p >All Rights Reserved &copy;BoomBooks</p>
+            </section>
+    
+    
+                 
+        </footer>
+</body>
+<script type="text/javascript" src="dist/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="dist/js/all.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap.js"></script>
+<script src="./dist/js/index.js"></script>
+</html>
+

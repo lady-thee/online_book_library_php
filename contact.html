@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="dist/css/contact.css">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container-fluid">
+            
+            <a href="#" class="navbar-brand mt-2 ml-4">
+                <b id="brand_name">BoomBooks</b>
+                <div id="logo">
+                    <i id="brand_logo">BB</i>
+                </div>
+            </a>
+     
+              <!-- toggler/collapsible -->
+              <button class="navbar-toggler button" data-toggle="collapse" data-target="#collapsibleNavBar">
+                  <span class="fas fa-bars"></span>
+                  <!-- <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggle-icon"></span> -->
+              </button>
+     
+     
+                    <!-- NavBar links -->
+              <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavBar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item pr-4"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item pr-4"><a class="nav-link" href="explore.html">EXPLORE</a></li>
+                <li class="nav-item pr-4"><a class="nav-link" href="faq.html#why">WHY BOOKS?</a></li>
+                <li class="nav-item pr-3"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+                 <li class="nav-id dropdown"><img src="img/user.png" class="img-fluid png" id="image" data-toggle="dropdown" data-target="#links">
+                          <ul class="dropdown-menu">
+                                <header>Hi there!</header>
+                                <div class="dropdown-divider"></div>
+                               <li class=""><a href="myaccount.html" class="dropdown-item">My Account</a></li>
+                               <li class=""><a href="library.html" class="dropdown-item">My Library</a></li>
+                               <li class=""><a href="upload.html" class="dropdown-item">Publish</a></li>
+                               <li class=""><a href="faq.html#ask" class="dropdown-item">FAQs</a></li>
+                               <div class="dropdown-divider"></div>
+                               <li class=""><a href="" class="dropdown-item">Sign Out</a></li>
+
+  
+     
+                              </ul>
+     
+                     </li>
+                     <button class="btn  btn-lg but pl-3" data-toggle="modal" data-target="#login" id="show-modal"  title="log in">SIGN UP</button>
+                  </ul>
+       </div>  
+  </nav>
+
+  
+
+  <div class="container cont">
+      <div class="row">
+          <div class="col-lg-8">
+              <header id="acct">Contact Us</header>
+              
+              <form action="" method="get" class="is-valid form">
+                <input type="hidden" name="_token" value="">
+                <div class="form-group">
+                   <label for="name">Name</label>
+                   <input type="text" class="form-control" name="name" value="name" placeholder="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" value="email" placeholder="email">
+                 </div>
+                
+                 <div class="form-group select">
+                    <label for="category">Category</label>
+                    <select name="category" class=" custom-select custom-select-md">
+                         <option value="selected">--</option>
+                         <option value="1">Vendor</option>
+                         <option value="2">Webpage/Application errors</option>
+                         <option value="3">Billing issues</option>
+                         <option value="4">Copyrights issues</option>
+                         <option value="5">Partnership</option>
+                         <option value="5">Others</option>
+
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="textarea">Message</label>
+                    <textarea name="message" id="description" cols="1" rows="5" class="form-control" placeholder="Type your message here"></textarea>
+                </div>
+              </form>   
+                
+          </div>
+
+          <div class="col-lg-4">
+             <div class="locate">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg><b>No 3 Harrison Avenue, Owerri, Imo State.</b>
+                <p id="svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mailbox2" viewBox="0 0 16 16">
+                    <path d="M9 8.5h2.793l.853.854A.5.5 0 0 0 13 9.5h1a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5H9v1z"/>
+                    <path d="M12 3H4a4 4 0 0 0-4 4v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7a4 4 0 0 0-4-4zM8 7a3.99 3.99 0 0 0-1.354-3H12a3 3 0 0 1 3 3v6H8V7zm-3.415.157C4.42 7.087 4.218 7 4 7c-.218 0-.42.086-.585.157C3.164 7.264 3 7.334 3 7a1 1 0 0 1 2 0c0 .334-.164.264-.415.157z"/>
+                  </svg>support@boombooks.com</p>
+             </div>
+          </div>
+      </div>
+  </div>
+
+  <button id="mybtn" title="go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill arrow" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+  </svg></button>
+    
+  <br><br><br>
+
+  <footer class="page-footer footer font-small ">
+    <div class="container conta">
+         
+                <div class="links flex flex-center d-flex pt-5">
+                    <li><a href="faq.html#ask">FAQs</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="upload.html">Publish with us</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </div>
+                 
+                <div class="icons flex flex-center mt-4">
+                    <a href=""><span class="fab fa-facebook mr-5"></span></a>
+                    <a href=""><span class="fab fa-instagram mr-5"></span></a>
+                    <a href=""><span class="fab fa-twitter mr-5"></span></a>
+                </div>
+    </div>
+<hr>
+    <section class="all flex flex-center">
+        
+        <p >All Rights Reserved &copy;BoomBooks</p>
+    </section>
+</footer>
+
+</body>
+<script type="text/javascript" src="dist/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="dist/js/all.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap.js"></script>
+<script src="./dist/js/index.js"></script>
+</html>

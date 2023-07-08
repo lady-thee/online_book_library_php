@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Book</title>
+    <link rel="stylesheet" href="dist/css/page.css">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container-fluid">
+            
+            <a href="#" class="navbar-brand mt-2 ml-4">
+                <b id="brand_name">BoomBooks</b>
+                <div id="logo">
+                    <i id="brand_logo">BB</i>
+                </div>
+            </a>
+     
+              <!-- toggler/collapsible -->
+              <button class="navbar-toggler button" data-toggle="collapse" data-target="#collapsibleNavBar">
+                  <span class="fas fa-bars"></span>
+                  <!-- <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggle-icon"></span> -->
+              </button>
+     
+     
+                    <!-- NavBar links -->
+              <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavBar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item pr-4"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item pr-4"><a class="nav-link" href="explore.html">EXPLORE</a></li>
+                <li class="nav-item pr-4"><a class="nav-link" href="faq.html#why">WHY BOOKS?</a></li>
+                <li class="nav-item pr-3"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+                 <li class="nav-id dropdown"><img src="img/user.png" class="img-fluid png" id="image" data-toggle="dropdown" data-target="#links">
+                          <ul class="dropdown-menu">
+                                <header>Hi there!</header>
+                                <div class="dropdown-divider"></div>
+                               <li class=""><a href="myaccount.html" class="dropdown-item">My Account</a></li>
+                               <li class=""><a href="library.html" class="dropdown-item">My Library</a></li>
+                               <li class=""><a href="upload.html" class="dropdown-item">Publish</a></li>
+                               <li class=""><a href="faq.html#ask" class="dropdown-item">FAQs</a></li>
+                               <div class="dropdown-divider"></div>
+                               <li class=""><a href="" class="dropdown-item">Sign Out</a></li>
+
+  
+     
+                              </ul>
+     
+                     </li>
+                     <button class="btn  btn-lg but pl-3" data-toggle="modal" data-target="#login" id="show-modal"  title="log in">SIGN UP</button>
+                  </ul>
+       </div>  
+  </nav>
+
+  
+        <div class="modal fade" id="login">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    
+
+                    <div class="modal-body">
+                    <div class="row rowm">
+                        <div class="col-md-6 col-6 col6">
+                            <div>
+                                <p>Welcome to</p>
+                                <b id="mo_name">BoomBooks</b>
+                                    <div id="mogo">
+                                        <i id="mo_logo">BB</i>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-6 col62">
+                                <div class="modal-header">
+                                    
+                                    <button class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                
+                                <div class="row loginbox">
+                                    <form role="form" method="POST" action="" class="is-valid form">
+                                        
+
+                                        <div class="form-group">
+                                            <label for="Email Address">Email Address</label>
+                                            <input type="email" class="form-control input-lg" name="email" placeholder="address">
+                                            <!-- <div class="invalid-feedback">Please fill out this field</div> -->
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="password" class="form-control input-lg" name="email" placeholder="password"  >
+                                            <div class="invalid-feedback">Please fill out this field</div>
+                                        </div>
+
+                                        <div class="checkbox">
+                                            <label for="opt-in">
+                                                <input type="checkbox" id='opt-in' name="remember"> <span class="custom" style="font-size: 13px;">Remember Me?</span>
+                                            </label>
+                                        </div>
+                                    
+                                        
+                                        <div class="form-group">
+                                            <button class="btn btn-light" type="submit">LOG IN</button>
+                                            <a href="" class="btn btn-link" type="submit">Forget Password?</a>
+                                        </div>
+                                        <div class="form-group">
+                                            <p></p><span class="btn btn-link neww"  >New Here?</span></p>
+                                        </div>
+                                    </form>                                    
+                                </div>
+
+                                
+                                <div class="row registerbox">
+                                    <form role="form" method="POST" action="" class="is-valid form">
+                                    <div class="form-group">
+                                        <label for="fullname">Full Name</label>
+                                        <input type="text" class="form-control input-lg" name="name" value="" placeholder="name">
+                                        <div class="invalid-feedback">Please fill out this field</div>
+                                    </div>  
+                                        
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" class="form-control input-lg" name="email" value="" placeholder="address">
+                                        <div class="invalid-feedback">Please fill out this field</div>
+                                    </div> 
+                                    
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control input-lg" name="email" placeholder="password" >
+                                        <div class="invalid-feedback">Please fill out this field</div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <button class="btn btn-light" type="submit">SIGN UP</button>
+                                    </div>
+
+                                    <div class="form-group  member">
+                                        <span class="btn btn-link" >Already a member?</span>
+                                    </div>
+                                        
+                                </form>    
+                                </div>                       
+                                    
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-light" data-dismiss="modal">close</button>
+                                    
+                                </div>
+                        </div>
+
+                    </div>
+                    </div> 
+
+                    
+                </div>
+            </div>
+        </div> 
+
+    <div class="container conf">
+        <div class="row">
+         <div class="col-lg-6">
+            <img src="img/childrenblood.jpg" alt="" class="img img-fluid img-thumbnail">
+         </div>
+          <div class="col-lg-6 mt-3 colm">
+            <div class="desc">
+                <b id="bb">Children of Blood and Bone</b>
+                <br>
+                <p id="pp">Tomi Adeyemi</p>
+                <br>
+                <div class="desc_icon">
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                    <span class="fas fa-star"></span>
+                </div>
+                <br>
+                <i id="free">free</i>
+                <br><br>
+                <button class="btn">Add to Library</button>
+            </div>
+              
+           
+                <div class="read">
+                    <header>About this book</header>
+                    <p class="abt">Zelie, a young spirited adult, forced to bury her heritage, in order to survive in the cruel world forged by the lies of the king and his family. Ignorance befits evil.
+                    Zelie Adebola remembers when the soil of Orisha hummed with magic. Burners ignited flames, Tiders commanded waves and Zelie's Reaper mother summoned forth souls.
+                    </p>
+                    <p class="abt1">But everything changed the night magic disappeared, the night Zelie lost her mother.</p>
+                    <p>Now Zelie has one chnace to bring maji back and strike against the monarchy. With the help of a rogue princess, and her older brother, Zelie must
+                        outwit and outrun the crown prince, who is hell-bent on validating his honor by eradicating magic for good.
+                    </p>
+                    <p class="abt2">
+                        Danger lurks in Orisha, yet the greatest danger may be Zelie as she struggles to control her powers-and her growing feelings for a certain enemy
+                    </p>
+                </div>
+            
+          </div>
+       </div>
+  <br><br><br>
+       <div class="row">
+           <div class="col-md-12">
+            <div class="reviews">
+                <header>Reviews</header>
+                <div id="p">Please LOGIN OR SIGNUP to leave a review</div>
+                <br>
+                <hr>
+                <br>
+                 <div class="review_box">
+                     <div class="user_box d-flex">
+                        <img src="img/user (1).png" alt="" id="user_img" class="img-fluid">
+                        <div id="user_id">Dr. Rachael Banks</div>
+                     </div>
+                               <br>
+                    <div class="user_review">This book is undoubtedly the best West African fantasy novel I've ever read. Soo beautiful!</div>
+                          <br>
+                        <div id="like">
+                            <i class="fas fa-heart"></i>&nbsp;&nbsp;&nbsp;
+                            <a href="" class="anch"><i class="b">Like</i></a>
+                        </div>
+                    &nbsp;
+                    <hr class="hr">
+                    <br>
+
+                    <div class="user_box d-flex">
+                        <img src="img/user (1).png" alt="" id="user_img" class="img-fluid">
+                        <div id="user_id">Abel Yang</div>
+                     </div>
+                               <br>
+                    <div class="user_review">A beautiful piece!</div>
+                    <br>
+                        <div id="like">
+                            <i class="fas fa-heart"></i>&nbsp;&nbsp;&nbsp;
+                             <a href="" class="anch"><i class="b">Like</i></a>
+                        </div>
+                    &nbsp;
+                    <hr class="hr">
+                    <br>
+
+                    <div class="user_box d-flex">
+                        <img src="img/user (1).png" alt="" id="user_img" class="img-fluid">
+                        <div id="user_id">Dexter Alex</div>
+                     </div>
+                               <br>
+                    <div class="user_review">I could not put it down, not enough killing but it's a beautiful read.</div>
+                       <br>
+                        <div id="like">
+                            <i class="fas fa-heart"></i>&nbsp;&nbsp;&nbsp;
+                            <a href="" class="anch"><i class="b">Like</i></a>
+                             <span fab fa-home></span>
+                        </div>
+                        &nbsp;
+                    <hr class="hr">
+
+                    <br>
+                    
+                    
+                </div>  
+                     
+            </div>
+              
+            <form action="" role="textbox" method="POST" class="is-valid">
+                <input type="hidden" name="_token" value="">
+                <div class="form-group">
+                    <label for="comment">Leave a comment, if you wish</label>
+                    <textarea name="comment" id="comment" cols="1" rows="5" class="form-control"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button class="btn" type="submit">DONE</button>
+                </div>
+            </form>
+           </div>
+       </div>
+    </div>
+    <button id="mybtn" title="go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill arrow" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+      </svg></button>
+
+    <footer class="page-footer footer font-small ">
+        <div class="container conta">
+              <div class="row">
+                  <div class="col-md-12 col-12">
+                    <div class="links flex flex-center d-flex">
+                        <li><a href="faq.html#ask">FAQs</a></li>
+                        <li class="contact"><a href="contact.html">Contact us</a></li>
+                        <li><a href="upload.html">Publish with us</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </div>
+                     
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-12 col-12">
+                    <div class="icons flex flex-center mt-4">
+                        <a href=""><span class="fab fa-facebook mr-5"></span></a>
+                        <a href=""><span class="fab fa-instagram mr-5"></span></a>
+                        <a href=""><span class="fab fa-twitter mr-5"></span></a>
+                    </div>
+                  </div>
+              </div>
+                   
+                   
+        </div>
+<hr>
+        <section class="all flex flex-center">
+            
+            <p >All Rights Reserved &copy;BoomBooks</p>
+        </section>
+
+
+             
+    </footer>
+
+    
+</body>
+<script type="text/javascript" src="dist/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="dist/js/all.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap.js"></script>
+<script src="./dist/js/index.js"></script>
+<script>
+  $(document).ready(function(){
+      $(".registerbox").hide();
+      $(".neww").click(function(){
+          $(".loginbox").hide();
+          $(".registerbox").fadeIn(500);
+      });
+      $(".member").click(function(){
+          $(".registerbox").hide();
+          $(".loginbox").fadeIn(500);
+      });
+  });
+</script>
+</html>
