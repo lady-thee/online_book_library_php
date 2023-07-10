@@ -5,13 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iroko | Login</title>
-  <link rel="stylesheet" href="dist/css/main.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script type="module" src="dist/js/tailwind.config.js"></script>
+  <?php require_once('partials/head.php') ?>
 </head>
 
 <body>
-  <main class="relative h-screen w-screen flex ">
+  <?php require_once('partials/navbar.php') ?>
+  <main class="relative h-screen w-screen flex bg-light">
     <div class="absolute block md:hidden top-0 left-0 h-full w-full">
       <img src="img/login-bg.jpg" alt="books" class="h-full w-full object-cover opacity-20 z-[-1]">
 
