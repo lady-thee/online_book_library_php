@@ -21,7 +21,7 @@
             <p class=" font-bold opacity-80">@username</p>
           </div>
 </div>
-          <a href="edit-profile.php" class="app-button px-4 py-2 rounded-3xl bg-primary text-light bg-gradient-to-r from-[#00000044] to-transparent ms-3">Edit Profile</a>
+          <a href="edit-profile.php" class="app-button px-4 py-2 rounded-3xl bg-transparent border border-dark text-dark hover:text-primary hover:border-primary ms-3"><i class="fas fa-pen"></i>&nbsp; Edit Profile</a>
    
           </div>
         </div>
