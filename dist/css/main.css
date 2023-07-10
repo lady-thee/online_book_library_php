@@ -1,0 +1,11 @@
+:root {
+  --dark: "#1C2120";
+  --light: "#FEFFF1";
+  --primary: "#C85103";
+}
+
+html,
+body {
+  color: var(--dark);
+  background-color: var(--light);
+}
