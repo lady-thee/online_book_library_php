@@ -12,7 +12,7 @@
 <body>
   <?php require_once('../partials/navbar.php') ?>
   <main class="relative w-full bg-light">
-    <div class="w-full h-20"></div>
+    <div class="w-full h-16"></div>
 
 
     <div class="w-full md:w-10/12 mx-auto p-2">
@@ -20,8 +20,8 @@
         My Library
       </h1>
       <p class="font-bold">access and read books easily</p>
-      <div class="w-full flex flex-wrap gap-5 py-5">
-        <div class="book-card w-5/12 md:w-[16%] 2xl-[12.8%] relative p-2 bg-light overflow-hidden shadow ">
+      <div class="w-full flex flex-wrap gap-5 py-5 justify-around sm:justify-start">
+        <div class="book-card w-[45%] md:w-[16%] 2xl-[12.8%] relative p-2 bg-light overflow-hidden shadow hover:shadow-lg hover:border-[#00000011] border border-transparent md:min-w-[180px] sm:w-[30%]">
           <img src="../img/cruelprince.jpg" alt="cruel prince" class="absolute h-full blur-2xl opacity-30 w-full">
           <div class="relative flex flex-col justify-between h-full">
             <a href="#" class="block">
@@ -38,7 +38,7 @@
             </div>
           </div>
         </div>
-        <div class="book-card w-5/12 md:w-[16%] 2xl-[12.8%] relative p-2 bg-light overflow-hidden shadow items-between">
+        <div class="book-card w-[45%] md:w-[16%] 2xl-[12.8%] relative p-2 bg-light overflow-hidden shadow  hover:shadow-lg hover:border-[#00000011] border border-transparent md:min-w-[180px] sm:w-[30%]">
           <img src="../img/cursedchild.jpg" alt="cruel prince" class="absolute h-full blur-2xl opacity-30 w-full">
           <div class="relative flex flex-col justify-between h-full">
             <a href="#" class="block">
