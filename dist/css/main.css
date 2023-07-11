@@ -8,4 +8,12 @@ html,
 body {
   color: var(--dark);
   background-color: var(--light);
+  font-size: 15px;
+}
+* {
+  transition: .2s;
+}
+
+a {
+  cursor: pointer;
 }
