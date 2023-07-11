@@ -44,7 +44,7 @@
     </a>
   </div>
   <div class="w-6/12 md:w-3/12 p-2 h-full">
-    <a class="h-full rounded-md block text-center p-2 border border-[#00000022] bg-[#00000011] hover:bg-primary hover:text-light">
+    <a href="books.php" class="h-full rounded-md block text-center p-2 border border-[#00000022] bg-[#00000011] hover:bg-primary hover:text-light">
       <img src="../img/my-books.png" alt="library" class="w-full object-contain">
       <h4 class="font-[500] text-lg">My Books</h4>
       <p class="opacity-70">0 Books</p>
