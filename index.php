@@ -193,12 +193,12 @@
     </div>
   </section>
   <!-- Why Choose Us -->
-  <section class="py-10 bg-primary text-white">
+  <section class="py-10 bg-[#eee] text-dark">
 
     <h1 class="font-bold text-3xl md:text-[4vw] md:leading-[4vw] text-center">Why
       <img src="<?= $BASE_DIR ?>img/logo.png" alt="logo" class="w-40 inline-block">
     </h1>
-    <div class="flex container mx-auto my-8 px-5 md:px-0 justify-center">
+    <div class="flex container flex-wrap mx-auto my-8 px-5 md:px-0 justify-center">
       <div class="w-11/12 sm:w-6/12 md:w-3/12 max-w-[300px] p-3">
         <h1 class="fas fa-users text-[60px] md:text-[6vw] 2xl:text-[110px]"></h1>
         <p class="text-lg opacity-70 font-[500]">
