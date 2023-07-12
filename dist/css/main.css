@@ -1,7 +1,7 @@
 :root {
-  --dark: "#1C2120";
-  --light: "#FEFFF1";
-  --primary: "#C85103";
+  --dark: #1c2120;
+  --light: #fefff1;
+  --primary: #c85103;
 }
 
 html,
@@ -9,11 +9,16 @@ body {
   color: var(--dark);
   background-color: var(--light);
   font-size: 15px;
+  min-height: 100vh;
 }
 * {
   transition: .2s;
 }
 
 a {
+  cursor: pointer;
+}
+
+input[type="submit"] {
   cursor: pointer;
 }

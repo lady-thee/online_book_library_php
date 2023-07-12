@@ -15,9 +15,9 @@
     <div class="w-full h-10"></div>
 
 
-    <div class="w-full md:w-6/12 h-full flex items-center justify-center md:justify-end p-5 relative">
+    <div class="w-full md:w-6/12 h-full flex items-center justify-center p-5 relative">
       <div class="w-full md:w-10/12 max-w-[400px]">
-        <h1 class="text-3xl  font-bold">
+        <h1 class="text-3xl  font-bold sticky top-16 bg-light">
           Change Password
         </h1>
         <p class="font-bold">update your password frequently</p>

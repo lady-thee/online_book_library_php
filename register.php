@@ -90,7 +90,7 @@
 
 <body>
   <?php require_once('partials/navbar.php') ?>
-  <main class="relative h-screen w-screen flex  flex-row-reverse">
+  <main class="relative h-[100vh] w-full flex  flex-row-reverse" style="min-height: max(700px,100vh);">
     <div class="absolute block md:hidden top-0 left-0 h-full w-full">
       <img src="img/login-bg.jpg" alt="books" class="h-full w-full object-cover opacity-20 z-[-1]">
 
@@ -98,7 +98,7 @@
     <div class="w-6/12 hidden md:block h-full relative">
       <img src="img/login-bg.jpg" alt="books" class="h-full w-full object-cover">
     </div>
-    <div class="w-full md:w-6/12 h-full flex items-center justify-center md:justify-end p-5 relative">
+    <div class="w-full md:w-6/12 h-full flex items-center justify-center md:justify-end p-5 relative my-auto">
       <div class="w-full md:w-10/12 max-w-[400px]">
         <h1 class="font text-3xl md:text-[4vw] font-extrabold">
           Join Iroko
