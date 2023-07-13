@@ -1,5 +1,3 @@
-
-
 <?php 
 
     $db_host = 'localhost';
@@ -16,12 +14,17 @@
         global $db_root;
 
         $connection = mysqli_connect($db_host, $db_root, $db_password, $db_name);
-        if(!$connection){
-            die('Database connection failed' . mysqli_connect_error());
-        }
         
     }
 
     connect();
 
+     
+    function trimData($connection, $data){
+        $data = trim($data);
+        $data = htmlspecialchars($data);
+        $data = stripcslashes($data);
+        $data = mysqli_real_escape_string($connection, $data);
+        return $data;
+    }
 ?>
