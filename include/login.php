@@ -32,8 +32,7 @@
              
               if($encryptPassword == $hashPassword){
                 $login_date = date('Y-m-d H:i:s');
-                session_regenerate_id();
-
+                
                 $_SESSION['id'] = $id;
                 $_SESSION['loggedin'] = true;
                 $_SESSION['username'] = $username; 
@@ -42,7 +41,7 @@
                  $update = "UPDATE users SET last_login = '$login_date', is_active = 1 where id = '$id' ";
                  $result = mysqli_query($connection, $update);
 
-                 header('location: ../user/index.php?success=' . $success);
+                 header('location: ../user/dashboard.php?success=' . $success);
               }else{
                 $error = "Login Unsuccessful";
                 header('location: ../loguser.php?error=' . $error);
