@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="flex flex-wrap justify-center px-5 md:px-0">
-        <div class="w-full md:w-4/12 p-4  ">
+        <div class="w-full md:w-6/12 lg:w-4/12 p-4  ">
 
           <div class=" rounded border border-[#00000022] p-2 mb-4">
             <h6 class="font-[500]">Rate</h6>
