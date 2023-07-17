@@ -18,7 +18,3 @@ require_once("./include/db.php");
     $bio = $row['bio'];
 
   }
-
-
-
-?>
