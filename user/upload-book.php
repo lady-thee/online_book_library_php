@@ -44,7 +44,19 @@
           </div>
           <div class="mb-3 flex flex-col">
             <label for="tags" class="font-[500] text-sm">Genre, Tags:</label>
-            <textarea rows="3" placeholder="romance, drama" class="px-3 py-2 rounded-md border border-[#00000022]"></textarea>
+            <style>
+              input[type="checkbox"]:checked+span {
+                /* Apply different style when the checkbox is checked */
+                /* Add your custom styles here */
+                background-color: #33ff3355;
+                font-weight: bold;
+              }
+            </style>
+            <div class="mb-3">
+              <label class="" for="fiction"><input hidden type="checkbox" name="tag" id="fiction"><span class="inline-block me-2 py-2 px-4 rounded-lg bg-[#00000022]">Fiction</span></label>
+              <label class="" for="Romance"><input hidden type="checkbox" name="tag" id="Romance"><span class="inline-block me-2 py-2 px-4 rounded-lg bg-[#00000022]">Romance</span></label>
+              <label class="" for="Drama"><input hidden type="checkbox" name="tag" id="Drama"><span class="inline-block me-2 py-2 px-4 rounded-lg bg-[#00000022]">Drama</span></label>
+            </div>
           </div>
           <div class="mb-3 flex flex-col">
             <input type="submit" value="Upload Book" class="px-3 py-2 rounded-md  font-bold bg-primary text-light">
