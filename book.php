@@ -12,15 +12,37 @@
   <?php require_once('partials/navbar.php') ?>
   <main class="mt-16">
     <div class="container mx-auto">
-      <div class="flex flex-wrap justify-center">
-        <div class="w-full md:w-4/12 p-4 md:max-w-[300px]">
-          <img src="./img/book-794978.jpg" alt="book name" class="w-full rounded shadow-md">
-          <h1 class="mt-2 font-bold text-2xl">Book Name</h1>
-          <div class="flex mt-2 items-center">
-            <img src="./img/user.jfif" alt="$username" class="h-10 w-10 me-2 rounded-full">
-            <p class="font-[500] opacity-80">Author Name</p>
+      <div class="relative h-[60vh] rounded overflow-hidden">
+        <img src="./img/book-794978.jpg" alt="book name" class="absolute w-full h-full object-cover top-0 left-0 blur-lg">
+        <div class="relative flex-wrap p-10 h-full w-full bg-gradient-to-t sm:justify-center from-light to-transparent flex content-center items-center">
+          <img src="./img/book-794978.jpg" alt="book name" class="w-48 md:w-60 rounded shadow-md">
+          <div class="sm:ms-4 sm:max-w-[60%]">
+            <h1 class="mt-2 font-bold text-2xl">Book Name</h1>
+            <div class="flex mt-2 items-center">
+              <img src="./img/user.jfif" alt="$username" class="h-8 w-8 me-2 rounded-full">
+              <p class="font-[500] opacity-80">Author Name</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus deserunt nostrum inventore tempore atque placeat dolor quia quaerat dignissimos!
+            </p>
           </div>
-          <div class="mt-5 rounded border border-[#00000022] p-2">
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center px-5 md:px-0">
+        <div class="w-full md:w-4/12 p-4  ">
+
+          <div class=" rounded border border-[#00000022] p-2 mb-4">
+            <h6 class="font-[500]">Rate</h6>
+            <form action="" class="flex justify-between items-center">
+              <div class="rating-bar w-fit">
+                <input type="text" hidden name="" id="rate-value" value="3">
+                <i class="fas fa-star inline-block me-2 cursor-pointer text-2xl hover:scale-110 opacity-50"></i><i class="fas fa-star inline-block me-2 cursor-pointer text-2xl hover:scale-110 opacity-50"></i><i class="fas fa-star inline-block me-2 cursor-pointer text-2xl hover:scale-110 opacity-50"></i><i class="fas fa-star inline-block me-2 cursor-pointer text-2xl hover:scale-110 opacity-50"></i><i class="fas fa-star inline-block me-2 cursor-pointer text-2xl hover:scale-110 opacity-50"></i>
+              </div>
+              <input type="submit" value="submit" class="px-4 py-2 hover:text-light hover:bg-primary rounded-md border border-primary text-primary font-[500]">
+            </form>
+
+          </div>
+          <div class=" rounded border border-[#00000022] p-2">
             <h6 class="font-[500]">Genre</h6>
             <div class="flex flex-wrap">
               <span class="inline-block px-4 py-2 rounded me-2 mb-2 bg-[#00000022]">fiction</span>
@@ -30,19 +52,69 @@
             </div>
           </div>
         </div>
-        <div class="w-full md:w-8/12 p-4">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus porro error itaque perspiciatis! Ullam, temporibus repellendus. Autem dolore eveniet dignissimos id debitis eos voluptas dolores nesciunt est, consequatur a soluta nihil ipsa placeat! Perferendis repellat voluptatum quibusdam, asperiores obcaecati eligendi soluta exercitationem fugit, similique consequuntur alias blanditiis quod. Facere quam, et odio commodi laborum officia esse eum reprehenderit nesciunt ut maxime laboriosam odit porro delectus atque quae dolor qui eveniet praesentium repellat mollitia nam! Nostrum doloremque ipsum reiciendis consequuntur fugiat similique, aperiam temporibus fuga laboriosam debitis sapiente enim modi, eos consequatur? Itaque at impedit ipsum molestiae mollitia rerum repudiandae, eius, obcaecati, tempore cum dolore eos earum beatae voluptate exercitationem cumque corrupti. Nemo quod, temporibus consequatur in perspiciatis corporis rerum, similique cupiditate autem laudantium tenetur! Consequatur perspiciatis voluptas cum eos maxime nobis exercitationem deserunt vitae aliquam inventore quaerat delectus amet nihil, modi in quae pariatur sit similique? Recusandae non veniam officiis aut, eos, autem fuga harum quia laudantium error praesentium suscipit illo sint expedita dignissimos dolore pariatur eveniet impedit vel iste culpa! Rerum, molestias laudantium est quo sapiente minus consequuntur amet maiores. Tempora facilis consequuntur libero id quo repellendus sapiente rem inventore ipsam voluptas, est saepe necessitatibus omnis aspernatur nobis, possimus velit! Incidunt quod sint quas iste. Perspiciatis iste pariatur enim? Delectus enim, nihil sequi libero iure ipsum voluptatibus sit, minima nobis repudiandae incidunt. Molestias, odio laborum. Saepe iste sit iusto. Repudiandae, amet distinctio. Quos suscipit perspiciatis rerum nobis nulla quasi, facere recusandae dolor totam modi saepe voluptas at, tempore officia itaque ex necessitatibus tenetur rem. Officiis quam libero voluptatum? Harum eveniet repellat rerum ipsam eum veritatis, placeat ratione. Tenetur harum error perspiciatis ut, hic recusandae illo dolor accusantium natus ratione suscipit vitae nisi ducimus nobis beatae dolores quae eaque earum? Voluptas eaque quo accusantium perferendis! Minima dolores perspiciatis dolor accusantium repellendus quia dolorum maxime. Quia dolorum consequatur fugiat suscipit numquam neque vitae amet nobis. Amet expedita sint nulla illum sunt, excepturi voluptas magnam ea reiciendis illo, corporis repellat. Consequatur excepturi asperiores aperiam molestiae iste illum dolorum sapiente, deleniti maxime autem earum fugit at accusantium dolor, reiciendis ullam error, beatae similique dolore. Fugit nihil accusantium laborum, excepturi cum beatae in, corrupti suscipit velit id minus? Accusamus quo sed repudiandae, impedit minima quas expedita eos earum quisquam similique dignissimos porro atque dolores ipsa ratione officiis laboriosam cum aspernatur iusto. Modi, fugit vel ab, alias odit, unde magnam beatae quibusdam labore maxime a laudantium repellendus eius! Hic minus repudiandae laborum obcaecati quibusdam! Iste soluta ut odit animi veritatis earum hic, error vero voluptas accusamus ab. Odio natus fuga blanditiis aliquid atque aspernatur, ipsum fugiat quod ratione dolorem voluptatibus officiis odit qui earum rem delectus? Illum tempora sunt hic asperiores voluptatem possimus id, consequatur inventore iste saepe sapiente labore quibusdam esse a laudantium quos velit unde nihil dolores sit omnis repellat at error optio! Reprehenderit et similique corrupti, enim architecto sint ex aut doloribus quia nemo tempora voluptates sit rem iste iusto, beatae aliquam saepe illum, dolore eligendi? Eum similique ipsam facilis exercitationem fugiat!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus porro error itaque perspiciatis! Ullam, temporibus repellendus. Autem dolore eveniet dignissimos id debitis eos voluptas dolores nesciunt est, consequatur a soluta nihil ipsa placeat! Perferendis repellat voluptatum quibusdam, asperiores obcaecati eligendi soluta exercitationem fugit, similique consequuntur alias blanditiis quod. Facere quam, et odio commodi laborum officia esse eum reprehenderit nesciunt ut maxime laboriosam odit porro delectus atque quae dolor qui eveniet praesentium repellat mollitia nam! Nostrum doloremque ipsum reiciendis consequuntur fugiat similique, aperiam temporibus fuga laboriosam debitis sapiente enim modi, eos consequatur? Itaque at impedit ipsum molestiae mollitia rerum repudiandae, eius, obcaecati, tempore cum dolore eos earum beatae voluptate exercitationem cumque corrupti. Nemo quod, temporibus consequatur in perspiciatis corporis rerum, similique cupiditate autem laudantium tenetur! Consequatur perspiciatis voluptas cum eos maxime nobis exercitationem deserunt vitae aliquam inventore quaerat delectus amet nihil, modi in quae pariatur sit similique? Recusandae non veniam officiis aut, eos, autem fuga harum quia laudantium error praesentium suscipit illo sint expedita dignissimos dolore pariatur eveniet impedit vel iste culpa! Rerum, molestias laudantium est quo sapiente minus consequuntur amet maiores. Tempora facilis consequuntur libero id quo repellendus sapiente rem inventore ipsam voluptas, est saepe necessitatibus omnis aspernatur nobis, possimus velit! Incidunt quod sint quas iste. Perspiciatis iste pariatur enim? Delectus enim, nihil sequi libero iure ipsum voluptatibus sit, minima nobis repudiandae incidunt. Molestias, odio laborum. Saepe iste sit iusto. Repudiandae, amet distinctio. Quos suscipit perspiciatis rerum nobis nulla quasi, facere recusandae dolor totam modi saepe voluptas at, tempore officia itaque ex necessitatibus tenetur rem. Officiis quam libero voluptatum? Harum eveniet repellat rerum ipsam eum veritatis, placeat ratione. Tenetur harum error perspiciatis ut, hic recusandae illo dolor accusantium natus ratione suscipit vitae nisi ducimus nobis beatae dolores quae eaque earum? Voluptas eaque quo accusantium perferendis! Minima dolores perspiciatis dolor accusantium repellendus quia dolorum maxime. Quia dolorum consequatur fugiat suscipit numquam neque vitae amet nobis. Amet expedita sint nulla illum sunt, excepturi voluptas magnam ea reiciendis illo, corporis repellat. Consequatur excepturi asperiores aperiam molestiae iste illum dolorum sapiente, deleniti maxime autem earum fugit at accusantium dolor, reiciendis ullam error, beatae similique dolore. Fugit nihil accusantium laborum, excepturi cum beatae in, corrupti suscipit velit id minus? Accusamus quo sed repudiandae, impedit minima quas expedita eos earum quisquam similique dignissimos porro atque dolores ipsa ratione officiis laboriosam cum aspernatur iusto. Modi, fugit vel ab, alias odit, unde magnam beatae quibusdam labore maxime a laudantium repellendus eius! Hic minus repudiandae laborum obcaecati quibusdam! Iste soluta ut odit animi veritatis earum hic, error vero voluptas accusamus ab. Odio natus fuga blanditiis aliquid atque aspernatur, ipsum fugiat quod ratione dolorem voluptatibus officiis odit qui earum rem delectus? Illum tempora sunt hic asperiores voluptatem possimus id, consequatur inventore iste saepe sapiente labore quibusdam esse a laudantium quos velit unde nihil dolores sit omnis repellat at error optio! Reprehenderit et similique corrupti, enim architecto sint ex aut doloribus quia nemo tempora voluptates sit rem iste iusto, beatae aliquam saepe illum, dolore eligendi? Eum similique ipsam facilis exercitationem fugiat!
-          </p>
-          <div class="flex justify-between py-4">
-            <a href="#" class="text-blue-800 hover:text-primary"><i class="fas fa-chevron-left"></i> Previous Page</a>
-            <a href="#" class="text-blue-800 hover:text-primary">Next Page <i class="fas fa-chevron-right"></i></a>
+        <div class="w-full md:w-6/12 p-4">
+          <h6 class="font-[500]">Reviews</h6>
+          <div class="max-h-[90vh] overflow-y-auto">
+            <div class="mb-4 review-card">
+              <div class="flex mt-2 items-center">
+                <img src="./img/user.jfif" alt="$username" class="h-6 w-6 me-2 rounded-full">
+                <p class="font-[500] ">Theola Onuh</p>
+              </div>
+              <p class="opacity-80 border-b border-[#00000011]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error unde porro consectetur minima animi facilis ex doloremque quo fugit? Provident.</p>
+            </div>
+            <div class="mb-4 review-card">
+              <div class="flex mt-2 items-center">
+                <img src="./img/user.jfif" alt="$username" class="h-6 w-6 me-2 rounded-full">
+                <p class="font-[500] ">Theola Onuh</p>
+              </div>
+              <p class="opacity-80 border-b border-[#00000011]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error unde porro consectetur minima animi facilis ex doloremque quo fugit? Provident.</p>
+            </div>
+            <div class="mb-4 review-card">
+              <div class="flex mt-2 items-center">
+                <img src="./img/user.jfif" alt="$username" class="h-6 w-6 me-2 rounded-full">
+                <p class="font-[500] ">Theola Onuh</p>
+              </div>
+              <p class="opacity-80 border-b border-[#00000011]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error unde porro consectetur minima animi facilis ex doloremque quo fugit? Provident.</p>
+            </div>
           </div>
+          <div class="p-2 bg-red-100 rounded">
+            <b>To leave a review you must <a href="login.php" class="text-blue-800 hover:text-primary">Login</a></b>
+          </div>
+          <form action="" class="flex p-3 rounded border border-[#00000022]">
+            <textarea name="" id="" class="w-full bg-transparent border-none outline-none" placeholder="write a comment or review here"></textarea>
+            <button class="h-16 w-16 inline-block text-light bg-primary rounded-md border border-primary font-[500]"><i class="fas fa-paper-plane"></i></button>
+          </form>
+
         </div>
       </div>
     </div>
   </main>
 </body>
+<script>
+  const ratingBar = document.querySelector('.rating-bar');
+  const rateValue = document.querySelector('#rate-value');
+  const stars = ratingBar.querySelectorAll('i');
+  colorStars(rateValue.value);
+
+  stars.forEach((star, index) => {
+    star.addEventListener('click', () => {
+      const starPosition = index + 1;
+      rateValue.value = starPosition;
+      colorStars(starPosition);
+    })
+  });
+
+  function colorStars(starPosition) {
+    for (let i = 0; i < stars.length; i++) {
+      const s = stars[i];
+      s.classList.remove('text-yellow-500');
+      s.classList.add('opacity-50');
+      if (i < starPosition) {
+        s.classList.remove('opacity-50');
+        s.classList.add('text-yellow-500');
+      }
+    }
+  }
+</script>
 
 </html>
