@@ -1,5 +1,8 @@
 <?php
-$BASE_DIR = !isset($BASE_DIR) ? "" : $BASE_DIR
+$BASE_DIR = !isset($BASE_DIR) ? "" : $BASE_DIR;
+ if($_SESSION['loggedin'] == true){
+  require_once('partials/session.php');
+ }
 ?>
 <header id="header" class="header h-16 fixed top-0 left-0 w-full bg-light flex justify-between items-center px-[5vw] md:px-[10vw] z-30">
   <a href="<?= $BASE_DIR ?>index.php">
