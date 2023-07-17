@@ -17,10 +17,6 @@ require_once("./include/db.php");
     $photo = $row['photo'];
     $bio = $row['bio'];
 
-  }else{
-    $error = "Unauthorized Access";
-    header('location: ../loguser.php?error=' . $error);
-    return false;
   }
 
 

@@ -48,7 +48,7 @@
 
     }else{
         $error = 'unauthorized access';
-        header('location: ../loguser.php?error='.$error);
+        header('location: ../register.php?error='.$error);
         return false;
     }
 
