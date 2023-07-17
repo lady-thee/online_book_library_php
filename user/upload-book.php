@@ -7,6 +7,8 @@
   <title>Iroko | Upload Book</title>
   <?php $BASE_DIR = "../";
   require_once('../partials/head.php'); ?>
+  <?php require_once('partials/session.php')?>
+
 </head>
 
 <body>

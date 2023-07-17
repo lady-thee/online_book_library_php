@@ -1,5 +1,3 @@
-<?php include"include/signup.php" ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iroko | SignUp</title>
   <?php require_once('partials/head.php') ?>
+  <?php require_once('partials/session.php')?>
 </head>
 
 <body>
@@ -26,7 +25,12 @@
           Join Iroko
         </h1>
         <p class="font-bold">Create a free acount today</p>
-        <form action="register.php" method="post" class="my-3">
+        <form action="include/signup.php" method="post" class="my-3">
+          <?php if(isset($_GET['error'])){ ?>
+            <div><p class="text-red-400"><?=$_GET['error']?></p></div>
+          <?php }else if(isset($_GET['success'])){ ?>
+            <div><p class="text-green-400"><?=$_GET['success']?></p></div>
+          <?php } ?>
           <div class="mb-3 flex flex-col">
             <label for="email" class="font-[500] text-sm">Email:</label>
             <input type="email" name="email" placeholder="jane@example.com " class="px-3 py-2 rounded-md border border-[#00000022]">
@@ -51,7 +55,7 @@
             <input type="submit" name="submit" value="Sign up" class="px-3 py-2 rounded-md  font-bold bg-primary text-light">
           </div>
           <div class="mb-3 flex justify-between">
-            <a href="login.php" class="text-blue-800 hover:text-primary">Login Instead</a>
+            <a href="login.php" class="text-blue-800 hover:text-primary">Have an account?</a>
             <a href="forgot.php" class="text-blue-800 hover:text-primary">Forgot Password?</a>
           </div>
         </form>

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iroko | Home of books</title>
   <?php require_once('partials/head.php') ?>
+  <?php require_once('partials/session.php')?>
 </head>
 
 <body>
