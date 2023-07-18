@@ -23,7 +23,3 @@ require_once("../include/db.php");
     header('location: ../loguser.php?error=' . $error);
     return false;
   }
-
-
-
-?>

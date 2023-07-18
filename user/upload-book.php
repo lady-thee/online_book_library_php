@@ -7,7 +7,7 @@
   <title>Iroko | Upload Book</title>
   <?php $BASE_DIR = "../";
   require_once('../partials/head.php'); ?>
-  <?php require_once('partials/session.php')?>
+  <?php require_once('partials/session.php') ?>
 
 </head>
 
@@ -48,8 +48,6 @@
             <label for="tags" class="font-[500] text-sm">Genre, Tags:</label>
             <style>
               input[type="checkbox"]:checked+span {
-                /* Apply different style when the checkbox is checked */
-                /* Add your custom styles here */
                 background-color: #33ff3355;
                 font-weight: bold;
               }
